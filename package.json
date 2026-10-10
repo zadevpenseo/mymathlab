@@ -1,0 +1,33 @@
+{
+  "name": "mymathlab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "deploy": "pnpm build && wrangler pages deploy dist --project-name=mymathlab"
+  },
+  "dependencies": {
+    "hono": "^4.7.2",
+    "katex": "^0.16.21",
+    "lucide-react": "^0.475.0",
+    "mathjs": "^14.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250224.0",
+    "@types/katex": "^0.16.7",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.7",
+    "wrangler": "^3.111.0"
+  }
+}
